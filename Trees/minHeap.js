@@ -1,3 +1,8 @@
+const isLeaf = Symbol('isLeaf');
+const parent = Symbol('parent');
+const swap = Symbol('swap');
+const minHeapify = Symbol('minHeapify');
+
 class MinHeap {
     constructor() {
         this.heapArr = [];
@@ -5,23 +10,23 @@ class MinHeap {
         this.heapArr[0] = -Infinity;
     }   
 
-    parent(i) {
+    [parent](i) {
         return Math.floor(i / 2);
     }
 
-    isLeaf(i) {
+    [isLeaf](i) {
         if(i >= Math.floor(this.length / 2) && i <= this.length)
             return true;
         return false;
     }
 
-    swap(a, b) {
+    [swap](a, b) {
         let temp = this.heapArr[a];
         this.heapArr[a] = this.heapArr[b];
         this.heapArr[b] = temp;
     }
 
-    minHeapify(i) {
+    [minHeapify](i) {
         let leftChild =  2 * i;
         let rightChild = 2 * i + 1;
         
