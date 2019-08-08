@@ -1,3 +1,5 @@
+
+
 // Constructor/class for link object
 class Link {
     constructor(object) {
@@ -326,3 +328,5 @@ class LinkedList {
         }
     }
 }
+
+module.exports  = { LinkedList };
