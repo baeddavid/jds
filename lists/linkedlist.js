@@ -6,21 +6,47 @@ class Link {
     }
 }
 
+/**
+ * Creates an empty doubly-linked list. A linked list is a data structure that does not
+ * stores its data in contiguous blocks of memory. It uses pointers/references to connect
+ * to the next "link". 
+ * 
+ * A doubly linked list is where each node has a reference to the previous node allowing
+ * for forward and backward traversal
+ * 
+ * General Info:
+ * Insertion Front/Back: O(1)
+ * Deletion Front/Back: O(1)
+ * Deletion(Key): O(N)
+ * Adding Collection: O(S) where S is the size of the collection to be added
+ * Adding a Collection At an Index: O(S + N)
+ * Get at Index: O(N)
+ * Copy(Shallow): O(1)
+ * Copy(Deep): O(n)
+ */
+
 class LinkedList {
     constructor() {
+        // Head is null in an empty list
         this.head = null;
+        // Tail is null in an empty list
         this.tail = null;
+        // Length is 0 in an empty list
         this.length = 0;
     }
 
+    // Returns a boolean if the list is empty or not
     isEmpty() {
         return this.head == null;
     }
 
+    // Returns the size of the list
     size() {
         return this.length;
     }
     
+    // Adds an object to the end of the list
+    // Returns true if the object is added successfully
     add(object) {
         let newLink = new Link(object);
         if(this.isEmpty()) 
@@ -31,8 +57,11 @@ class LinkedList {
         }
         this.tail = newLink;
         this.length++;
+        return true;
     }
 
+    // Adds an object to the front of the list
+    // Returns true if the object is added successfully
     addFirst(object) {
         let newLink = new Link(object);
         if(this.isEmpty())
@@ -42,8 +71,11 @@ class LinkedList {
         newLink.next = this.head;
         this.head = newLink;
         this.length++;
+        return true;
     }
 
+    // Adds an object to the end of the list
+    // Returns true if the object is added successfully
     addLast(object) {
         let newLink = new Link(object);
         if(this.isEmpty()) 
@@ -54,8 +86,11 @@ class LinkedList {
         }
         this.tail = newLink;
         this.length++;
+        return true;
     }
     
+    // Adds an object at a specific index
+    // Returns true if the object is added successfully
     addAtIndex(index, object) {
         let newLink = new Link(object);
         if(this.isEmpty()) {
@@ -80,12 +115,16 @@ class LinkedList {
         return true;
     }
 
+    // Appends an array of items to the end of the list
+    // Returns true if the object is added successfully
     addAll(collection) {
         for(let x of collection)
             this.addLast(x);
         return true;
     }
 
+    // Appends an array of items to a specific index
+    // Returns true if the object is added successfully
     addAllAtIndex(index, collection) {
         let tempList = new LinkedList();
         tempList.addAll(collection);
@@ -111,6 +150,7 @@ class LinkedList {
         return true;
     }
 
+    // Removes the first object
     removeFirst() {
         let deleted = this.head;
         if(this.head.next == null)
@@ -122,6 +162,7 @@ class LinkedList {
         return deleted;
     }
 
+    // Removes the last object
     removeLast() {
         let deleted = this.tail;
         if(this.head.next == null)
@@ -133,6 +174,7 @@ class LinkedList {
         return deleted;
     }
 
+    // Gets the link at specified index
     get(index) {
         let current = this.head;
         let i = 0;
@@ -144,15 +186,8 @@ class LinkedList {
         }
         return current;
     }
-    // Ready to remove
-    getHead() {
-        return this.head;
-    }
-    
-    getTail() {
-        return this.tail;
-    }
-    
+
+    // Searches for a link and returns it
     search(i) {
         let current = this.head;
         while(current != null) {
@@ -163,6 +198,18 @@ class LinkedList {
         return current;
     }    
 
+    // Returns a boolean if the specified key is present in the list
+    contains(key) {
+        let current = this.head;
+        while(current.object != key && current != null) {
+            current = current.next;
+            if(!current)
+                return false;
+        }
+        return true;
+    }
+
+    // Removes a link at a specific index
     removeAtIndex(index) {
         let i  = 0;
         let current = this.head;
@@ -185,6 +232,7 @@ class LinkedList {
         return current;
     }    
 
+    // Removes a link with a specific object key
     removeKey(key) {
         let current = this.head;
         while(current.object != key) {
@@ -205,6 +253,7 @@ class LinkedList {
         return current;
     }
 
+    // Removes the first occurence of the key
     removeFirstOccurence(key) {
         let current = this.head;
         while(current.object != key) {
@@ -225,10 +274,12 @@ class LinkedList {
         return current;
     }
 
+    // Returns the head of the list
     peek() {
         return this.head;
     }
 
+    // Returns an array with all the contents of the list in order 
     toArray() {
         let array = [];
         let current = this.head;
@@ -239,13 +290,13 @@ class LinkedList {
         return array;
     }
 
-    
-
+    // Creates a shallow copy of the list
     copy() {
         let shallowList = this;
         return shallowList;
     }
 
+    // Creates a deep copy of the list.
     deepCopy() {
         let copyList = new LinkedList();
         let current = this.head;
@@ -255,7 +306,7 @@ class LinkedList {
         }
         return copyList;
     }
-
+    /* Testing functions. Will be removed */
     printForward() {
         let current = this.head;
         while(current != null) {
