@@ -9,14 +9,6 @@ class MinHeap {
         return Math.floor(i / 2);
     }
 
-    leftChild(i) {
-        return 2 * i;
-    }
-
-    rightChild(i) {
-        return 2 * i + 1;
-    }
-
     isLeaf(i) {
         if(i >= Math.floor(this.length / 2) && i <= this.length)
             return true;
@@ -30,17 +22,20 @@ class MinHeap {
     }
 
     minHeapify(i) {
+        let leftChild =  2 * i;
+        let rightChild = 2 * i + 1;
+        
         if(this.isLeaf(i))
             return;
         
-            if(this.heapArr[i] > this.heapArr[this.leftChild(i)] || 
-            this.heapArr[i] < this.heapArr[this.rightChild(i)]) {
-                if(this.heapArr[this.leftChild(i)] > this.heapArr[this.rightChild(i)]) {
-                    this.swap(i, this.leftChild(i));
-                    this.maxHeapify(this.leftChild(i));
+            if(this.heapArr[i] > this.heapArr[leftChild] || 
+            this.heapArr[i] > this.heapArr[rightChild]) {
+                if(this.heapArr[leftChild] > this.heapArr[rightChild]) {
+                    this.swap(i, leftChild);
+                    this.maxHeapify(leftChild);
                 } else {
-                    this.swap(i, this.rightChild(i));
-                    this.minHeapify(this.rightChild(i));
+                    this.swap(i, rightChild);
+                    this.minHeapify(rightChild);
                 }
             }
     }
