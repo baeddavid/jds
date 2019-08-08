@@ -2,7 +2,7 @@
 
 JDS(Java Data Structures) is an in development Javascript data structures library. It takes popular Java data structures and implements them in Javascript for convenient use. They come with standard Java methods.
 
-## Data Strcutures to be implemented
+## Data Structures to be implemented
  * LinkedList ✓
  * Stack/Queue
  * Priority Queue
