@@ -4,6 +4,12 @@ const { Stack } = require('./ADT/stack');
 const { MaxHeap } = require('./Trees/maxHeap');
 const { MinHeap } = require('./Trees/minHeap');
 
+module.exports = LinkedList;
+module.exports = Queue;
+module.exports = Stack;
+module.exports = MaxHeap;
+module.exports = MinHeap;
+
 // const list = new LinkedList();
 // console.log(list);
 // const que = new Queue();
