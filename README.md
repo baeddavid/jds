@@ -7,18 +7,20 @@ JDS(Java Data Structures) is an in development Javascript data structures librar
  * Stack/Queue ✓
  * Priority Queue
  * Min/Max Heap ✓
- * Binary Search Trees/ B-Trees
+ * Binary Search Trees
  * HashMap
  * HashSet
  * Graph/ Weighted Graph
 
 ## Potential Strucutures to be implemented
  * TreeSet
- * 2-3-4 Trees
+ * 2-3-4 Tree
+ * B-Trees
  * LinkedStack
  * LinkedQueue
  * LinkedMap
  * HashTree
+ 
 
 ## Release Data
  * Currently a side project so it will be released in about 4-6  weeks at the current rate. Will be released when the main structures are implemented. This is not a hard release date, as testing and other things may bog me down.
