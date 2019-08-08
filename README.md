@@ -21,4 +21,4 @@ JDS(Java Data Structures) is an in development Javascript data structures librar
  * HashTree
 
 ## Release Data
- * Currently a side project so it will be released in about 4-6  weeks at the current rate. Will be leased when the main structures are implemented, This is not a hard release date, as testing and other things may bog me down.
+ * Currently a side project so it will be released in about 4-6  weeks at the current rate. Will be released when the main structures are implemented. This is not a hard release date, as testing and other things may bog me down.
