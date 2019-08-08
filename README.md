@@ -6,7 +6,7 @@ JDS(Java Data Structures) is an in development Javascript data structures librar
  * LinkedList ✓
  * Stack/Queue ✓
  * Priority Queue
- * Min/Max Heap
+ * Min/Max Heap ✓
  * Binary Search Trees/ B-Trees
  * HashMap
  * HashSet
