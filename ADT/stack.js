@@ -27,7 +27,7 @@ class Stack {
         return top == -1;
     }
     
-    search(object) {
+    contains(object) {
         for(let i = top; i >= 0; i--)
         if(this.stackArr[i] == object)
         return true;

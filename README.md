@@ -72,3 +72,24 @@ Below are the methods for the `LinkedList` class.
 | `toArray()`  | returns an array of the list in order |
 | `copy()`  | creates a shallow copy of the list |
 | `deepCopy()`  | creates a deep copy of the list |
+
+## Stack
+
+Stack is implemented via an array
+
+Below are the methods for the `Stack` class.
+
+## Methods
+
+| Method  | Description |
+| ------------- | ------------- |
+| **Add**  |  |
+| `add(object)`  | Pushes an object to the top of the stack. Returns true if operation was successful |
+| **Remove**  |  |
+| `pop()`  | removes the object at the top of stack and returns it |
+| **Search**  |  |
+| `contains(key)`  | returns a boolean if the stack with key exists|
+| **Etc**  |  |
+| `peek()`  | Returns the object at the top of the stack |
+| `empty()`  | Returns a boolean if the stack is empty or not|
+| `size()`  | Returns the size of the stack |
