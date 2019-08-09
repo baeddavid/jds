@@ -9,6 +9,8 @@ JDS(Java Data Structures) is an in development Javascript data structures librar
 | ADT  | Stack  | ✓ |
 | ADT  | Queue  | ✓ |
 | ADT  | Priority Queue  |
+| ADT  | Linked Stack  | ✓ |
+| ADT  | Linked Queue  | ✓ |
 | Tree | Max Heap  | ✓ |
 | Tree | Min Heap  | ✓ |
 | Tree | Red-Black Tree  |
@@ -23,8 +25,6 @@ JDS(Java Data Structures) is an in development Javascript data structures librar
  * TreeSet
  * 2-3-4 Tree
  * B-Trees
- * LinkedStack
- * LinkedQueue
  * LinkedMap
  * HashTree
  
