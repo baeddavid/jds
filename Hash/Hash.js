@@ -12,7 +12,7 @@ class Hash {
             hash = ((hash<<5)-hash)+char;
             hash = hash & hash; // Convert to 32bit integer
         }
-        return Math.abs(Math.floor(hash / 10) % 10);
+        return Math.abs(hash);
     }
 }
 
