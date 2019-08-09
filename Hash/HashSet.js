@@ -9,8 +9,10 @@
  */
 
 
+ // Import that Hash abstract class
 let Hash = require('./Hash');
 
+// Extends the Hash abstract class 
 class HashSet extends Hash {
     constructor() {
         super();
@@ -18,19 +20,24 @@ class HashSet extends Hash {
         this.hashArr = [];
     }
 
+    // Adds a hashed primitive value to the array
     add(primitiveValue) {
         let index = this.hash(primitiveValue);
         this.hashArr[index] = primitiveValue;
+        this.length++;
         return true;
     }
 
+    // Removes and returns the hashed primitive value
     remove(primitiveValue) {
         let index = this.hash(primitiveValue);
         let returnValue = this.hashArr[index];
         this.hashArr[index] = 0;
+        this.length--;
         return returnValue;
     }
 
+    // Checks if the set has a value and returns a boolean
     contains(primitiveValue) {
         let index = this.hash(primitiveValue);
         if(!this.hashArr[index])
@@ -38,16 +45,19 @@ class HashSet extends Hash {
         return true;
     }
 
+    // Clears the hash set
     clear() {
         this.hashArr = [];
         return true;
     }
 
+    // Creates a shallow copy of the hash set
     copy() {
         let shallowCopy = this;
         return shallowCopy;
     }
 
+    // Creates a deepy copy of the hash set
     deepCopy() {
         let deepCopy = new HashSet();
         for(let i = 0; i < this.hashArr.length; i++)
@@ -55,10 +65,12 @@ class HashSet extends Hash {
         return deepCopy;
     }
 
+    // Checks if hash set is empty and returns a boolean
     isEmpty() {
         return this.length == 0;
     }
 
+    // Returns the size of the hash set
     size() {
         return this.length;
     }
