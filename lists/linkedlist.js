@@ -214,6 +214,31 @@ class LinkedList {
         return true;
     }
 
+    // Returns the index of the first occurence of key
+    indexOf(key) {
+        let current = this.head, index = 0;
+        while(current.object != key && current != null) {
+            current = current.next;
+            index++;
+            if(!current)
+                return -1;
+        }
+        return index;
+    }
+
+    // Returns the index of the last occurence of key
+    lastIndexOf(key) {
+        let current = this.head, index = this.length - 1;
+        let current = this.tail;
+        while(current.object != key && current != null) {
+            current = current.prev;
+            index--;
+            if(!current)
+                return -1;
+        }
+        return index;
+    }
+
     // Removes a link at a specific index
     removeAtIndex(index) {
         let i  = 0;
@@ -279,9 +304,35 @@ class LinkedList {
         return current;
     }
 
+    // Removes the last occurence of the key
+    removeLastOccurence(key) {
+        let current = this.tail;
+        while(current.object != key) {
+            current = current.prev;
+            if(!current)
+                return false;
+        }
+        if(current == this.head)
+            this.head = this.head.next;
+        else
+            current.prev.next = current.next;
+
+        if(current == this.tail)
+            this.tail = current.prev;
+        else
+            current.next.prev = current.prev;
+        this.length--;
+        return current;
+    }
+
     // Returns the head of the list
-    peek() {
+    peekFirst() {
         return this.head;
+    }
+
+    // Returns the tail of the list
+    peekLast() {
+        return this.tail;
     }
 
     // Returns an array with all the contents of the list in order 
