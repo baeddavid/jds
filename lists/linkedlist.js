@@ -325,6 +325,13 @@ class LinkedList {
         return current;
     }
 
+    // Replaces the object at index with key
+    set(index, key) {
+        let current = this.get(index);
+        current.object = key;
+        return true;
+    }
+
     // Returns the head of the list
     peekFirst() {
         return this.head;
