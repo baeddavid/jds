@@ -3,14 +3,21 @@
 JDS(Java Data Structures) is an in development Javascript data structures library. It takes popular Java data structures and implements them in Javascript for convenient use. They come with standard Java methods.
 
 ## Data Structures to be implemented
- * LinkedList ✓
- * Stack/Queue ✓
- * Priority Queue
- * Min/Max Heap ✓
- * Binary Search Trees
- * HashMap
- * HashSet
- * Graph/ Weighted Graph
+
+| Type  | Data Structure | Implemented|
+| ------------- | ------------- | ------------- |
+| ADT  | Stack  | ✓ |
+| ADT  | Queue  | ✓ |
+| ADT  | Priority Queue  |
+| Tree | Max Heap  | ✓ |
+| Tree | Min Heap  | ✓ |
+| Tree | Red-Black Tree  |
+| Hash  | Hash Map  |
+| Hash  | Hash Set  |
+| Pointer  | Linked List  | ✓ |
+| Pointer  | Graph  |
+| Pointer  | Weighted Graph  |
+
 
 ## Potential Strucutures to be implemented
  * TreeSet
