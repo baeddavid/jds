@@ -2,6 +2,7 @@ const Hash = require('./Hash');
 
 class HashMap extends Hash {
     constructor() {
+        super();
         this.hashArr = [];
         this.length = 0;
     }
@@ -9,10 +10,15 @@ class HashMap extends Hash {
     put(key, value) {
         let idx = this.hash(key);
         if(this.containsKey(key))
-            this.hashArr[idx] = this.hashArr[idx]++;
+            return false;
         else
             this.hashArr[idx] = value;
         return true;
+    }
+
+    get(key) {
+        let idx = this.hash(key);
+        return this.hashArr[idx];
     }
 
     remove(key) {
