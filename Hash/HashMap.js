@@ -9,10 +9,7 @@ class HashMap extends Hash {
 
     put(key, value) {
         let idx = this.hash(key);
-        if(this.containsKey(key))
-            return false;
-        else
-            this.hashArr[idx] = value;
+        this.hashArr[idx] = value;
         return true;
     }
 
