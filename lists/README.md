@@ -30,7 +30,7 @@ Below are the methods for the `LinkedList` class.
 | `get(index)`  | returns the link at index  |
 | `search(key)`  | returns the link that contains key  |
 | `contains(key)`  | returns a boolean if a link with key exists |
-| `indexOf(key)`  | returns the index of the first occurence of key|
+| `indexOf(key)`  | returns the index of the first occurence of key |
 | `lastIndexOf(key)`  | returns the index of the last occurence of key |
 
 ### Extra
