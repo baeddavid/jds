@@ -2,7 +2,7 @@ const Stack = require('../lists/linkedlist');
 
 class LinkedQueue {
     constructor() {
-        this.length == 0;
+        this.length = 0;
         this.queStack = new Stack();
     }
 
