@@ -1,4 +1,3 @@
-const parent = Symbol('parent');
 const isLeaf = Symbol('isLeaf');
 const swap = Symbol('swap');
 const maxHeapify = Symbol('maxHeapify');
@@ -10,7 +9,7 @@ class MaxHeap {
         this.heapArr[0] = Infinity;
     }   
 
-    [parent](i) {
+    parent(i) {
         return Math.floor(i / 2);
     }
 
@@ -67,4 +66,4 @@ class MaxHeap {
     }
 }
 
-module.exports  = { MaxHeap };
+module.exports  = MaxHeap;

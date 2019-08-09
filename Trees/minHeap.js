@@ -1,5 +1,4 @@
 const isLeaf = Symbol('isLeaf');
-const parent = Symbol('parent');
 const swap = Symbol('swap');
 const minHeapify = Symbol('minHeapify');
 
@@ -10,7 +9,7 @@ class MinHeap {
         this.heapArr[0] = -Infinity;
     }   
 
-    [parent](i) {
+    parent(i) {
         return Math.floor(i / 2);
     }
 
@@ -67,4 +66,4 @@ class MinHeap {
     }
 }
 
-module.exports  = { MinHeap };
+module.exports  = MinHeap;
