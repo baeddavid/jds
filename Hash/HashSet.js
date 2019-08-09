@@ -20,8 +20,10 @@ class HashSet extends Hash {
         this.hashArr = [];
     }
 
-    // Adds a hashed primitive value to the array
+    // Adds a hashed primitive value to the array. If the set has the value return false
     add(primitiveValue) {
+        if(this.contains(primitiveValue))
+            return false;
         let index = this.hash(primitiveValue);
         this.hashArr[index] = primitiveValue;
         this.length++;
