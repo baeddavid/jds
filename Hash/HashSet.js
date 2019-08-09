@@ -1,3 +1,14 @@
+/**
+ * A Set implemented via a Hash function. It's important to note
+ * right now the Hash Set does not take objects due to how Javascript
+ * has its object.toString() method set up. I plan on updating it
+ * within the next week. 
+ * 
+ * If you didn't read 
+ * TLDR: ONLY USE PRIMITVE VARIABLES
+ */
+
+
 let Hash = require('./Hash');
 
 class HashSet extends Hash {
