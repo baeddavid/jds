@@ -1,6 +1,6 @@
 const Stack = require('../lists/linkedlist');
 
-class Queue {
+class LinkedQueue {
     constructor() {
         this.length == 0;
         this.queStack = new Stack();
@@ -25,3 +25,5 @@ class Queue {
         return this.length;
     }
 }
+
+module.exports = LinkedQueue;

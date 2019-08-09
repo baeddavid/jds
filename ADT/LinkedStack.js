@@ -29,3 +29,5 @@ class LinkedStack {
         this.stackList.contains(object);
     }
 }
+
+module.exports = LinkedStack;
