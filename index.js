@@ -4,5 +4,6 @@ const Stack = require('./ADT/stack');
 const MaxHeap = require('./Trees/maxHeap');
 const MinHeap = require('./Trees/minHeap');
 const HashSet = require('./Hash/HashSet');
+const LinkedStack = require('./ADT/LinkedStack');
 
-module.exports = {LinkedList, Queue, Stack, MaxHeap, MinHeap, HashSet};
+module.exports = {LinkedList, Queue, Stack, MaxHeap, MinHeap, HashSet, LinkedStack};

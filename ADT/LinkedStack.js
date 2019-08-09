@@ -1,4 +1,4 @@
-const LinkedList = require('./lists/linkedlist');
+const LinkedList = require('../lists/linkedlist');
 
 class LinkedStack {
     constructor() {
