@@ -55,6 +55,18 @@ class HashMap extends Hash {
         return keySet;
     }
 
+    toArray() {
+        let array = [];
+        for(let key of this.keyArr)
+            array.push(this.get(key));
+        return array;
+    }
+
+    copy() {
+        let shallow = this;
+        return shallow;
+    }
+
     size() {
         return this.length;
     }
