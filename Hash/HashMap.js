@@ -6,12 +6,14 @@ class HashMap extends Hash {
         super();
         this.hashArr = [];
         this.keyArr = [];
+        this.length = 0;
     }
 
     put(key, value) {
         this.keyArr.push(key);
         let idx = this.hash(key);
         this.hashArr[idx] = value;
+        this.length++;
         return true;
     }
 
@@ -25,6 +27,7 @@ class HashMap extends Hash {
             if(ele == key)
                 this.keyArr.splice(index, 1);
         });
+        this.length--;
         let idx = this.hash(key);
         let returnValue = this.hashArr[idx];
         this.hashArr[idx] = null;
