@@ -16,7 +16,9 @@ Below are the methods for the `LinkedList` class.
 | `addAll(collection)` | appends a collection to the end of the list preserving the order. Returns true if operation was successful |
 | `addAllAtIndex(index, collection)` | appends a collection at index preserving the order  |
 
+
 ### Remove
+
 | Method  | Description |
 | `removeFirst()`  | removes the first link and returns it |
 | `removeLast()`  | removes the last link and returns in  |
@@ -25,7 +27,9 @@ Below are the methods for the `LinkedList` class.
 | `removeFirstOccurence(key)`  | removes the first occurence of key and returns it  |
 | `removeLastOccurence(key)`  | removes the last occurence of key and returns it  |
 
+
 ### Search
+
 | Method(test)  | Description |
 | `get(index)`  | returns the link at index  |
 | `search(key)`  | returns the link that contains key  |
@@ -33,7 +37,9 @@ Below are the methods for the `LinkedList` class.
 | `indexOf(key)`  | returns the index of the first occurence of key |
 | `lastIndexOf(key)`  | returns the index of the last occurence of key |
 
+
 ### Extra
+
 | Method  | Description |
 | `set(index, key)`  | changes the key of a link at link |
 | `peekFirst()`  | returns the head of the list |
