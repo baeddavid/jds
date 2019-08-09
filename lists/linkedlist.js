@@ -228,8 +228,7 @@ class LinkedList {
 
     // Returns the index of the last occurence of key
     lastIndexOf(key) {
-        let current = this.head, index = this.length - 1;
-        let current = this.tail;
+        let current = this.tail, index = this.length - 1;
         while(current.object != key && current != null) {
             current = current.prev;
             index--;
