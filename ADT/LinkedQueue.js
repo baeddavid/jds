@@ -8,13 +8,13 @@ class LinkedQueue {
 
     enque(object) {
         this.length++;
-        this.queStack.addFirst(object);
+        this.queStack.add(object);
         return true;
     }
 
     deque() {
         this.length--;
-        return this.queStack.removeLast();
+        return this.queStack.removeFirst();
     }
 
     peek() {
