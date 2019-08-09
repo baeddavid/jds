@@ -15,6 +15,13 @@ class Queue {
         return this.queArr.shift();
     }
 
+    contains(object) {
+        for(let x of this.queArr)
+            if(x == object)
+                return true;
+        return false;
+    }
+
     peek() {
         if(this.length == 0)
             return false;

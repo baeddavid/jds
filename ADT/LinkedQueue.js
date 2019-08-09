@@ -17,6 +17,10 @@ class LinkedQueue {
         return this.queStack.removeFirst();
     }
 
+    contains(object) {
+        return this.queStack.contains(object);
+    }
+
     peek() {
         return this.queStack.tail;
     }

@@ -73,6 +73,8 @@ Below are the methods for the `LinkedList` class.
 | `copy()`  | creates a shallow copy of the list |
 | `deepCopy()`  | creates a deep copy of the list |
 
+# ADT
+
 ## Stack
 
 Stack is implemented via an array
@@ -93,3 +95,66 @@ Below are the methods for the `Stack` class.
 | `peek()`  | Returns the object at the top of the stack |
 | `empty()`  | Returns a boolean if the stack is empty or not|
 | `size()`  | Returns the size of the stack |
+
+## Queue
+
+Queue is implemented via an array
+
+Below are the methods for the `Queue` class.
+
+## Methods
+
+| Method  | Description |
+| ------------- | ------------- |
+| **Add**  |  |
+| `enque(object)`  | Adds an object to the front of the queue. Returns true if operation was successful |
+| **Remove**  |  |
+| `deque()`  | removes the object at the rear of the queue and returns it |
+| **Search**  |  |
+| `contains(key)`  | returns a boolean if the queue with key exists|
+| **Etc**  |  |
+| `peek()`  | Returns the object at the rear of the queue |
+| `empty()`  | Returns a boolean if the queue is empty or not|
+| `size()`  | Returns the size of the queue |
+
+## Linked Stack
+
+Linked Stack is implemented via a the `LinkedList` class.
+
+Below are the methods for the `LinkedStack` class.
+
+## Methods
+
+| Method  | Description |
+| ------------- | ------------- |
+| **Add**  |  |
+| `push(object)`  | Push an object to the top of the list. Returns true if operation was successful |
+| **Remove**  |  |
+| `pop()`  | removes the object at the top of the list and returns it |
+| **Search**  |  |
+| `contains(key)`  | returns a boolean if the stack with key exists|
+| **Etc**  |  |
+| `peek()`  | Returns the object at the top of the stack |
+| `empty()`  | Returns a boolean if the stack is empty or not|
+| `size()`  | Returns the size of the stack |
+
+## Linked Queue
+
+Linked Queue is implemented via a the `LinkedList` class.
+
+Below are the methods for the `LinkedQueue` class.
+
+## Methods
+
+| Method  | Description |
+| ------------- | ------------- |
+| **Add**  |  |
+| `enque(object)`  | Adds an object to the front of the queue. Returns true if operation was successful |
+| **Remove**  |  |
+| `deque()`  | removes the object at the rear of the queue and returns it |
+| **Search**  |  |
+| `contains(key)`  | returns a boolean if the queue with key exists|
+| **Etc**  |  |
+| `peek()`  | Returns the object at the rear of the queue |
+| `empty()`  | Returns a boolean if the queue is empty or not|
+| `size()`  | Returns the size of the queue |
