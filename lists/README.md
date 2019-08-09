@@ -26,7 +26,7 @@ Below are the methods for the `LinkedList` class.
 | `removeLastOccurence(key)`  | removes the last occurence of key and returns it  |
 
 ### Search
-| Method  | Description |
+| Method(test)  | Description |
 | `get(index)`  | returns the link at index  |
 | `search(key)`  | returns the link that contains key  |
 | `contains(key)`  | returns a boolean if a link with key exists |
