@@ -1,13 +1,15 @@
 const Hash = require('./Hash');
+const HashSet = require('./HashSet');
 
 class HashMap extends Hash {
     constructor() {
         super();
         this.hashArr = [];
-        this.length = 0;
+        this.keyArr = [];
     }
 
     put(key, value) {
+        this.keyArr.push(key);
         let idx = this.hash(key);
         this.hashArr[idx] = value;
         return true;
@@ -19,6 +21,10 @@ class HashMap extends Hash {
     }
 
     remove(key) {
+        this.keyArr.forEach((ele, index) => {
+            if(ele == key)
+                this.keyArr.splice(index, 1);
+        });
         let idx = this.hash(key);
         let returnValue = this.hashArr[idx];
         this.hashArr[idx] = null;
@@ -37,6 +43,13 @@ class HashMap extends Hash {
         if(!!this.hashArr[idx])
             return true;
         return false;
+    }
+
+    keySet() {
+        let keySet = new HashSet();
+        for(let key of this.keyArr)
+            keySet.add(key);
+        return keySet;
     }
 
     size() {
