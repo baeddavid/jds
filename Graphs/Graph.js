@@ -1,10 +1,4 @@
-class Vertex {
-    constructor(label) {
-        this.label = label;
-        this.wasVisited = false;
-    }
-}
-
+const Vertex = require('./Vertex');
 const Queue = require('../ADT/queue');
 const Stack = require('../ADT/stack');
 
