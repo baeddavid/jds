@@ -22,6 +22,10 @@ class Queue {
         return false;
     }
 
+    isEmpty() {
+        return this.length == 0;
+    }
+
     peek() {
         if(this.length == 0)
             return false;

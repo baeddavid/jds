@@ -2,35 +2,32 @@
 class Stack {
     constructor() {
         this.stackArr = [];
-        this.top = -1;
         this.length = 0;
     }
     
     push(object) {
         this.stackArr.push(object);
-        this.top++;
         this.length++;
         return true;
     }
     
     pop() {
-        this.top--;
         this.length--;
         return this.stackArr.pop();
     }
     
     peek() {
-        return this.stackArr[this.top];
+        return this.stackArr[this.stackArr.length - 1];
     }
     
     empty() {
-        return top == -1;
+        return this.length == 0;
     }
     
     contains(object) {
-        for(let i = top; i >= 0; i--)
+        for(let i = this.stackArr.length - 1; i >= 0; i--)
         if(this.stackArr[i] == object)
-        return true;
+            return true;
         return false;
     }
     
