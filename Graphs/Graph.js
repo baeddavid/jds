@@ -28,6 +28,21 @@ class Graph {
     addEdge(start, end) {
         this.adjMat[start][end] = 1;
         this.adjMat[end][start] = 1;
+        return true;
+    }
+
+    removeVertex(key) {
+        this.nVerts--;
+        for(let i = 0; i < this.vertexList.length; i++)
+            if(this.vertexList[i].label == key)
+                this.vertexList.splice(i, 1);
+        return true;
+    }
+
+    removeEdge(start, end) {
+        this.adjMat[start][end] = 0;
+        this.adjMat[end][start] = 0;
+        return true;
     }
 
     displayVertex(vertex) {
