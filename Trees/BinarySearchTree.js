@@ -22,8 +22,11 @@ class BinarySearchTree {
 
     insert(object, id) {
         let newNode = new Node(object, id);
-        if(this.root == null) 
+        if(this.root == null)  {
             this.root = newNode;
+            this.size++;
+            return true;
+        }
         else {
             let current = this.root;
             let parent;
@@ -33,13 +36,15 @@ class BinarySearchTree {
                     current = current.leftChild;
                     if(current == null) {
                         parent.leftChild = newNode;
-                        return;
+                        this.size++;
+                        return true;
                     }
                 } else {
                     current = current.rightChild;
                     if(current == null) {
                         parent.rightChild = newNode;
-                        return;
+                        this.size++;
+                        return true;
                     }
                 }
             }
