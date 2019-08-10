@@ -8,7 +8,7 @@ JDS(Java Data Structures) is an in development Javascript data structures librar
 | ------------- | ------------- | ------------- |
 | ADT  | Stack  | ✓ |
 | ADT  | Queue  | ✓ |
-| ADT  | Priority Queue  | In-progress (most likely last) |
+| ADT  | Priority Queue  | In-progress |
 | ADT  | Linked Stack  | ✓ |
 | ADT  | Linked Queue  | ✓ |
 | Tree | Max Heap  | ✓ |
@@ -18,7 +18,7 @@ JDS(Java Data Structures) is an in development Javascript data structures librar
 | Hash  | Hash Set  | ✓ | 
 | Pointer  | Linked List  | ✓ |
 | Pointer  | Graph  | ✓ |
-| Pointer  | Weighted Graph  | In-progress |
+| Pointer  | Weighted Graph  | In-progress (most likely last) |
 
 
 ## Potential Strucutures to be implemented
