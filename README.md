@@ -260,6 +260,9 @@ Below are the methods for the `Graph ` class.
 | **Add**  |  |
 | `addVertex(label)`  | Creates a vertex and returns true if operation was successful |
 | `addEdge(start, end)`  | Creates an edge between two nodes. |
+| **Remove**  |  |
+| `removeVertex(key)`  | Removes the vertex with a label of key and returns true if opeartion was successful |
+| `removeEdge(start, key)`  | Removes an edge between two vertices |
 | **Etc**  |  |
 | `displayVertex()`  | Prints the vertex to the console |
 | `displayVertexMst()`  | Prints the vertices on the same line to the console |
