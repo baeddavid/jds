@@ -241,3 +241,29 @@ Below are the methods for the `HashMap` class.
 | `isEmpty()`  | Returns a boolean if the map is empty or not|
 | `size()`  | Returns the size of the map |
 
+# Graphs
+
+Graphs are also an ADT. However due to the complex nature of graphs, they are in a separate section.
+
+Graphs are a non-linear data strucutre consisting of nodes and edges.
+
+## Graph
+
+Graph is implemented via an array and the `Vertex` class.
+
+Below are the methods for the `Graph ` class.
+
+## Methods
+
+| Method  | Description |
+| ------------- | ------------- |
+| **Add**  |  |
+| `addVertex(label)`  | Creates a vertex and returns true if operation was successful |
+| `addEdge(start, end)`  | Creates an edge between two nodes. |
+| **Etc**  |  |
+| `displayVertex()`  | Prints the vertex to the console |
+| `displayVertexMst()`  | Prints the vertices on the same line to the console |
+| `getAdjUnvisitedVertex(vertex)`  | Returns the closest vertex to `vertex`that is unvisited |
+| `bfs()`  | Performs a breadth first search on the graph|
+| `dfs()`  | Performs a depth first search on the graph |
+| `mst()`  | Prints a minimum spanning tree |
