@@ -15,7 +15,7 @@ class MaxHeap {
     }
 
     [isLeaf](i) {
-        if(i >= Math.floor(this.length / 2) && i <= this.length)
+        if(i > Math.floor(this.length / 2) && i <= this.length)
             return true;
         return false;
     }
@@ -37,10 +37,10 @@ class MaxHeap {
             this.heapArr[i] < this.heapArr[rightChild]) {
                 if(this.heapArr[leftChild] > this.heapArr[rightChild]) {
                     this[swap](i, leftChild);
-                    this.maxHeapify(leftChild);
+                    this[maxHeapify](leftChild);
                 } else {
                     this[swap](i, rightChild);
-                    this.maxHeapify(rightChild);
+                    this[maxHeapify](rightChild);
                 }
             }
     }
@@ -65,13 +65,10 @@ class MaxHeap {
         for(let i of collection)
             this.insert(i);
     }
-}
 
-let max = new MaxHeap();
-max.insert(4);
-max.insert(9);
-max.insert(8);
-max.extractMax();
-console.log(max)
+    isEmpty() {
+        return this.length == 0;
+    }
+}
 
 module.exports  = MaxHeap;
