@@ -47,10 +47,10 @@ class BinarySearchTree {
     }
 }
 
-let tree = new BinarySearchTree();
-tree.insert('a', 4);
-tree.insert('b', 2);
-tree.insert('c', 18);
-tree.insert('d', 21);
-tree.insert('e', 17);
-console.log(tree.search(21));
+// let tree = new BinarySearchTree();
+// tree.insert('a', 4);
+// tree.insert('b', 2);
+// tree.insert('c', 18);
+// tree.insert('d', 21);
+// tree.insert('e', 17);
+// console.log(tree.search(21));
