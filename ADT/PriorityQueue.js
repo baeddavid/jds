@@ -17,6 +17,9 @@ class PriorityQueue{
 
     insert(object, prio) {
         let queEle = new QueElement(object, prio);
+        if(this.contains(queEle.object))
+            return false;
+
         let present = false;
         for(let i = 0; i < this.queArr.length; i++) {
             if(this.queArr[i].prio < queEle.prio) {
@@ -37,6 +40,13 @@ class PriorityQueue{
             throw new Error('Underflow');
         this.length--;
         return this.queArr.shift();
+    }
+
+    setPrio(key, newPrio) {
+        for(let i = 0; i < this.queArr.length; i++)
+            if(this.queArr[i].object == key)
+                this.queArr[i].prio = newPrio;
+        return true;
     }
 
     clear() {
