@@ -8,19 +8,19 @@ class QueElement {
 class PriorityQueue{
     constructor() {
         this.queArr = [];
-        this.length = 0;
+        this.size = 0;
     }
 
     isEmpty() {
-        return this.length == 0;
+        return this.size == 0;
     }
 
     insert(object, prio) {
         let queEle = new QueElement(object, prio);
         let present = false;
-
         for(let i = 0; i < this.queArr.length; i++) {
-            if(this.queArr[i].prio > queEle.prio) {
+            if(this.queArr[i].prio < queEle.prio) {
+                console.log('b');
                 this.queArr.splice(i, 0, queEle);
                 present = true;
                 break;
@@ -28,7 +28,8 @@ class PriorityQueue{
         }
         if(!present)
             this.queArr.push(queEle);
-        this.length++;
+        this.size++;
+        return true;
     }
 
     deque() {
@@ -44,7 +45,7 @@ class PriorityQueue{
     }
 
     size() {
-        return this.length;
+        return this.size;
     }
 
     contains(key) {
@@ -74,6 +75,4 @@ class PriorityQueue{
     }
 }
 
-let que = new PriorityQueue();
-que.insert('a', 3);
-console.log(que);
+module.exports = PriorityQueue;
