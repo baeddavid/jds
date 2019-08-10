@@ -46,32 +46,32 @@ Below are the methods for the `LinkedList` class.
 | Method  | Description |
 | ------------- | ------------- |
 | **Add**  |  |
-| `add(object)`  | adds an object to the end of the list. Returns true if operation was successful |
-| `addFirst(object)`  | adds an object to the front of the list. Returns true if operation was successful |
-| `addLast(object)`  | adds an object to the end of the list. Returns true if operation was successful |
-| `addAtIndex(index, object)` | adds an object at index. Returns true if operation was successful |
-| `addAll(collection)` | appends a collection to the end of the list preserving the order. Returns true if operation was successful |
-| `addAllAtIndex(index, collection)` | appends a collection at index preserving the order  |
+| `add(object)`  | Adds an object to the end of the list. Returns true if operation was successful |
+| `addFirst(object)`  | Adds an object to the front of the list. Returns true if operation was successful |
+| `addLast(object)`  | Adds an object to the end of the list. Returns true if operation was successful |
+| `addAtIndex(index, object)` | Adds an object at index. Returns true if operation was successful |
+| `addAll(collection)` | Appends a collection to the end of the list preserving the order. Returns true if operation was successful |
+| `addAllAtIndex(index, collection)` | Appends a collection at index preserving the order  |
 | **Remove**  |  |
-| `removeFirst()`  | removes the first link and returns it |
-| `removeLast()`  | removes the last link and returns in  |
-| `removeAtIndex()`  | removes the link at index and returns it |
-| `removeKey(key)`  | removes the link with key and returns it  |
-| `removeFirstOccurence(key)`  | removes the first occurence of key and returns it  |
-| `removeLastOccurence(key)`  | removes the last occurence of key and returns it  |
+| `removeFirst()`  | Removes the first link and returns it |
+| `removeLast()`  | Removes the last link and returns in  |
+| `removeAtIndex()`  | Removes the link at index and returns it |
+| `removeKey(key)`  | Removes the link with key and returns it  |
+| `removeFirstOccurence(key)`  | Removes the first occurence of key and returns it  |
+| `removeLastOccurence(key)`  | Removes the last occurence of key and returns it  |
 | **Search**  |  |
-| `get(index)`  | returns the link at index  |
-| `search(key)`  | returns the link that contains key  |
-| `contains(key)`  | returns a boolean if a link with key exists |
-| `indexOf(key)`  | returns the index of the first occurence of key|
-| `lastIndexOf(key)`  | returns the index of the last occurence of key |
+| `get(index)`  | Returns the link at index  |
+| `search(key)`  | Returns the link that contains key  |
+| `contains(key)`  | Returns a boolean if a link with key exists |
+| `indexOf(key)`  | Returns the index of the first occurence of key|
+| `lastIndexOf(key)`  | Returns the index of the last occurence of key |
 | **Etc**  |  |
-| `set(index, key)`  | changes the key of a link at index |
-| `peekFirst()`  | returns the head of the list |
-| `peekLast()`  | removes the tail of the list |
-| `toArray()`  | returns an array of the list in order |
-| `copy()`  | creates a shallow copy of the list |
-| `deepCopy()`  | creates a deep copy of the list |
+| `set(index, key)`  | Changes the key of a link at index |
+| `peekFirst()`  | Returns the head of the list |
+| `peekLast()`  | Removes the tail of the list |
+| `toArray()`  | Returns an array of the list in order |
+| `copy()`  | Creates a shallow copy of the list |
+| `deepCopy()`  | Creates a deep copy of the list |
 
 # ADT
 
@@ -90,9 +90,9 @@ Below are the methods for the `Stack` class.
 | **Add**  |  |
 | `add(object)`  | Pushes an object to the top of the stack. Returns true if operation was successful |
 | **Remove**  |  |
-| `pop()`  | removes the object at the top of stack and returns it |
+| `pop()`  | Removes the object at the top of stack and returns it |
 | **Search**  |  |
-| `contains(key)`  | returns a boolean if the stack with key exists|
+| `contains(key)`  | Returns a boolean if the stack with key exists|
 | **Etc**  |  |
 | `peek()`  | Returns the object at the top of the stack |
 | `empty()`  | Returns a boolean if the stack is empty or not|
@@ -109,15 +109,40 @@ Below are the methods for the `Queue` class.
 | Method  | Description |
 | ------------- | ------------- |
 | **Add**  |  |
-| `enque(object)`  | Adds an object to the front of the queue. Returns true if operation was successful |
+| `enque(object)`  | Adds an object to the rear of the queue. Returns true if operation was successful |
 | **Remove**  |  |
-| `deque()`  | removes the object at the rear of the queue and returns it |
+| `deque()`  | Removes the object at the front of the queue and returns it |
 | **Search**  |  |
-| `contains(key)`  | returns a boolean if the queue with key exists|
+| `contains(key)`  | Returns a boolean if the queue with key exists|
 | **Etc**  |  |
 | `peek()`  | Returns the object at the rear of the queue |
 | `empty()`  | Returns a boolean if the queue is empty or not|
 | `size()`  | Returns the size of the queue |
+
+## Priority Queue
+
+Linked Queue is implemented via an array.
+
+Below are the methods for the `Priority Queue` class.
+
+## Methods
+
+| Method  | Description |
+| ------------- | ------------- |
+| **Add**  |  |
+| `insert(object, prio)`  | Adds an object to the appropriate position queue. Returns true if operation was successful |
+| **Remove**  |  |
+| `deque()`  | Removes the object at the front of the queue and returns it |
+| **Search**  |  |
+| `contains(key)`  | Returns a boolean if the object with key exists|
+| **Etc**  |  |
+| `setPrio(key, newPriot)`  | Change the priority of an object with value of key |
+| `peek()`  | Returns the object at the front of the queue |
+| `back()`  | Returns the object at the rear of the queue |
+| `empty()`  | Returns a boolean if the queue is empty or not|
+| `clear()`  | Empties the queue and returns true if operation was successful |
+| `size()`  | Returns the size of the queue |
+| `toArray()`  | Returns an array of the objects in order |
 
 ## Linked Stack
 
@@ -132,9 +157,9 @@ Below are the methods for the `LinkedStack` class.
 | **Add**  |  |
 | `push(object)`  | Push an object to the top of the list. Returns true if operation was successful |
 | **Remove**  |  |
-| `pop()`  | removes the object at the top of the list and returns it |
+| `pop()`  | Removes the object at the top of the list and returns it |
 | **Search**  |  |
-| `contains(key)`  | returns a boolean if the stack with key exists|
+| `contains(key)`  | Returns a boolean if the stack with key exists|
 | **Etc**  |  |
 | `peek()`  | Returns the object at the top of the stack |
 | `empty()`  | Returns a boolean if the stack is empty or not|
@@ -151,11 +176,11 @@ Below are the methods for the `LinkedQueue` class.
 | Method  | Description |
 | ------------- | ------------- |
 | **Add**  |  |
-| `enque(object)`  | Adds an object to the front of the queue. Returns true if operation was successful |
+| `enque(object)`  | Adds an object to the rear of the queue. Returns true if operation was successful |
 | **Remove**  |  |
-| `deque()`  | removes the object at the rear of the queue and returns it |
+| `deque()`  | Removes the object at the front of the queue and returns it |
 | **Search**  |  |
-| `contains(key)`  | returns a boolean if the queue with key exists|
+| `contains(key)`  | Returns a boolean if the queue with key exists|
 | **Etc**  |  |
 | `peek()`  | Returns the object at the rear of the queue |
 | `empty()`  | Returns a boolean if the queue is empty or not|
@@ -184,7 +209,7 @@ Below are the methods for the `HashSet` class.
 | **Remove**  |  |
 | `remove(key)`  | Removes the object with a value of `key` and returns it. |
 | **Search**  |  |
-| `contains(key)`  | returns a boolean if the set with key exists|
+| `contains(key)`  | Returns a boolean if the set with key exists|
 | **Etc**  |  |
 | `clear()`  | Empties the set |
 | `copy()`  | Creates a shallow copy of the set |
