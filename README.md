@@ -136,7 +136,7 @@ Below are the methods for the `Priority Queue` class.
 | **Search**  |  |
 | `contains(key)`  | Returns a boolean if the object with key exists|
 | **Etc**  |  |
-| `setPrio(key, newPriot)`  | Change the priority of an object with value of key |
+| `setPrio(key, newPrio)`  | Change the priority of an object with value of key |
 | `peek()`  | Returns the object at the front of the queue |
 | `back()`  | Returns the object at the rear of the queue |
 | `empty()`  | Returns a boolean if the queue is empty or not|
