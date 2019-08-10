@@ -17,8 +17,8 @@ JDS(Java Data Structures) is an in development Javascript data structures librar
 | Hash  | Hash Map  | ✓ |
 | Hash  | Hash Set  | ✓ | 
 | Pointer  | Linked List  | ✓ |
-| Pointer  | Graph  | In-progress |
-| Pointer  | Weighted Graph  |
+| Pointer  | Graph  | ✓ |
+| Pointer  | Weighted Graph  | In-progress |
 
 
 ## Potential Strucutures to be implemented
