@@ -66,7 +66,7 @@ Below are the methods for the `LinkedList` class.
 | `indexOf(key)`  | returns the index of the first occurence of key|
 | `lastIndexOf(key)`  | returns the index of the last occurence of key |
 | **Etc**  |  |
-| `set(index, key)`  | changes the key of a link at link |
+| `set(index, key)`  | changes the key of a link at index |
 | `peekFirst()`  | returns the head of the list |
 | `peekLast()`  | removes the tail of the list |
 | `toArray()`  | returns an array of the list in order |
