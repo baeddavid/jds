@@ -8,5 +8,7 @@ const MinHeap = require('./Trees/minHeap');
 const HashSet = require('./Hash/HashSet');
 const HashMap = require('./Hash/HashMap');
 const Graph = require('./Graphs/Graph');
+const PriorityQueue = require('./ADT/PriorityQueue');
 
-module.exports = {LinkedList, Queue, Stack, MaxHeap, MinHeap, HashSet, LinkedStack, LinkedQueue, HashMap, Graph};
+
+module.exports = {LinkedList, Queue, Stack, MaxHeap, MinHeap, HashSet, LinkedStack, LinkedQueue, HashMap, Graph, PriorityQueue};
