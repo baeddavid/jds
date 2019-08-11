@@ -1,4 +1,4 @@
-const Link = require('./Link')
+const Link = require('./Links/Link')
 
 /**
  * Creates an empty doubly-linked list. A linked list is a data structure that does not
@@ -209,7 +209,7 @@ class LinkedList {
         while(current.object != key && current != null) {
             current = current.next;
             index++;
-            if(!current)
+            if(current == null)
                 return -1;
         }
         return index;
@@ -221,7 +221,7 @@ class LinkedList {
         while(current.object != key && current != null) {
             current = current.prev;
             index--;
-            if(!current)
+            if(current == null)
                 return -1;
         }
         return index;
