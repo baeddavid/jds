@@ -28,8 +28,6 @@ If you find a bug and went through the source code and know how to help, absolut
 | Hash  | Hash Set  |
 | Pointer  | Linked List  |
 | Pointer  | Graph  |
-| Pointer  | Weighted Graph  
-
 
 ## Potential Strucutures to be implemented
  * TreeSet
@@ -38,6 +36,7 @@ If you find a bug and went through the source code and know how to help, absolut
  * Red-Black Tree
  * LinkedMap
  * HashTree
+ * Weighted Graph
 
 ## Documentation
 
