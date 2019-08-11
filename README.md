@@ -8,9 +8,17 @@ Although JDS can be used for personal project development, I highly reccomend wa
 
 JDS was made so that I could practice algorithms and data structures conveniently on my personal machine without downloading multiple NPM packages or copying code from somewhere.
 
+## Installation
+
+Just throw this into the working repository in your terminal and you're all set
+
+`npm i jds.js`
+
 ## Contributing
 
 If you find a bug and went through the source code and know how to help, absolutely submit a pull request! There aren't any specific guidelines for contributing, I just ask that you describe in detail what your pull request is fixing/improving.
+
+If you have a data strucutre you'd like to see implemeted feel free to shoot me an email at baeddavid@gmail.com and I'll see what I can do.
 
 ## Data Structures
 
@@ -43,8 +51,11 @@ If you find a bug and went through the source code and know how to help, absolut
 ## Linked List
 
 The linked list is implemeted with a doubly linked list. 
-
 Below are the methods for the `LinkedList` class.
+
+You can create a linked list by calling
+`new jds.LinkedList()`
+assuming you gave the package import a name of `jds`.
 
 ## Methods
 
@@ -85,9 +96,11 @@ ADT stands for Abstract Data Type. ADTs are a data type where the user is not co
 ## Stack
 
 Stack is implemented via an array
-
 Below are the methods for the `Stack` class.
 
+You can create a stack by calling
+`new jds.Stack()`
+assuming you gave the package import a name of `jds`.
 ## Methods
 
 | Method  | Description |
@@ -106,9 +119,11 @@ Below are the methods for the `Stack` class.
 ## Queue
 
 Queue is implemented via an array
-
 Below are the methods for the `Queue` class.
 
+You can create a queue by calling
+`new jds.Queue()`
+assuming you gave the package import a name of `jds`.
 ## Methods
 
 | Method  | Description |
@@ -127,9 +142,11 @@ Below are the methods for the `Queue` class.
 ## Priority Queue
 
 Linked Queue is implemented via an array.
-
 Below are the methods for the `Priority Queue` class.
 
+You can create a priority queue by calling
+`new jds.PriorityQueue()`
+assuming you gave the package import a name of `jds`.
 ## Methods
 
 | Method  | Description |
@@ -152,9 +169,11 @@ Below are the methods for the `Priority Queue` class.
 ## Linked Stack
 
 Linked Stack is implemented via a the `LinkedList` class.
-
 Below are the methods for the `LinkedStack` class.
 
+You can create a linked stack by calling
+`new jds.LinkedStack()`
+assuming you gave the package import a name of `jds`.
 ## Methods
 
 | Method  | Description |
@@ -173,9 +192,11 @@ Below are the methods for the `LinkedStack` class.
 ## Linked Queue
 
 Linked Queue is implemented via a the `LinkedList` class.
-
 Below are the methods for the `LinkedQueue` class.
 
+You can create a linked queue by calling
+`new jds.LinkedQueue()`
+assuming you gave the package import a name of `jds`.
 ## Methods
 
 | Method  | Description |
@@ -202,9 +223,11 @@ Hash data structures are structures that use a hash function. Due to the hash fu
 ## Hash Set
 
 Hash Set is implemented via the `Hash` abstract class.
-
 Below are the methods for the `HashSet` class.
 
+You can create a hash set by calling
+`new jds.HashSet()`
+assuming you gave the package import a name of `jds`.
 ## Methods
 
 | Method  | Description |
@@ -225,9 +248,11 @@ Below are the methods for the `HashSet` class.
 ## Hash Map
 
 Hash Map is implemented via the `Hash` abstract class and the `HashSet` class.
-
 Below are the methods for the `HashMap` class.
 
+You can create a hash map by calling
+`new jds.HashMap()`
+assuming you gave the package import a name of `jds`.
 ## Methods
 
 | Method  | Description |
@@ -254,6 +279,9 @@ Trees are generally pointer based data structures that hold references to 'child
 
 Max Heap is implemented via an array.
 
+You can create a max heap by calling
+`new jds.MaxHeap()`
+assuming you gave the package import a name of `jds`.
 ## Methods
 
 | Method  | Description |
@@ -270,6 +298,9 @@ Max Heap is implemented via an array.
 
 Min Heap is implemented via an array.
 
+You can create a min heap by calling
+`new jds.MinHeap()`
+assuming you gave the package import a name of `jds`.
 ## Methods
 
 | Method  | Description |
@@ -288,6 +319,9 @@ Binary Search Tree is implemented via the `Node` class.
 
 **Note** bst is an unbalanced tree which degenerates performance wise in specific conditions 
 
+You can create a bst by calling
+`new jds.bst()`
+assuming you gave the package import a name of `jds`.
 ## Methods
 
 | Method  | Description |
@@ -314,9 +348,11 @@ Graphs are a non-linear data structure consisting of nodes and edges.
 ## Graph
 
 Graph is implemented via an array and the `Vertex` class.
-
 Below are the methods for the `Graph ` class.
 
+You can create a graph by calling
+`new jds.Graph()`
+assuming you gave the package import a name of `jds`.
 ## Methods
 
 | Method  | Description |
