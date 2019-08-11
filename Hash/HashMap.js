@@ -75,7 +75,5 @@ class HashMap extends Hash{
         return this.size == 0;
     }
 }
-let map = new HashMap();
-map.put(4,3);
-console.log(map);
+
 module.exports = HashMap;
