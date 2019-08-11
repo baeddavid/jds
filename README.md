@@ -38,7 +38,7 @@ If you find a bug and went through the source code and know how to help, absolut
  * HashTree
  * Weighted Graph
 
-## Documentation
+# Documentation
 
 ## Linked List
 
