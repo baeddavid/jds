@@ -14,8 +14,8 @@ If you find a bug and went through the source code and know how to help absolute
 
 ## Data Structures
 
-| Type  | Data Structure | Implemented|
-| ------------- | ------------- | ------------- |
+| Type  | Data Structure |
+| ------------- | ------------- | 
 | ADT  | Stack  |
 | ADT  | Queue  |
 | ADT  | Priority Queue  |
