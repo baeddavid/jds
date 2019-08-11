@@ -139,3 +139,4 @@ class sLinkedList {
     }
 }
 
+module.exports = sLinkedList;
