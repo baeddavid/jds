@@ -309,7 +309,7 @@ Binary Search Tree is implemented via the `Node` class.
 
 Graphs are also an ADT. However due to the complex nature of graphs, they are in a separate section.
 
-Graphs are a non-linear data strucutre consisting of nodes and edges.
+Graphs are a non-linear data structure consisting of nodes and edges.
 
 ## Graph
 
