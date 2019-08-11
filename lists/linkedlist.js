@@ -184,10 +184,10 @@ class LinkedList {
     // Searches for a link and returns it
     search(i) {
         let current = this.head;
-        while(current != null) {
+        while(current.object != i) {
             current = current.next;
-            if(current.object == i)
-                break;
+            if(current == null)
+                return false;
         }
         return current;
     }    
@@ -195,9 +195,9 @@ class LinkedList {
     // Returns a boolean if the specified key is present in the list
     contains(key) {
         let current = this.head;
-        while(current.object != key && current != null) {
+        while(current.object != key) {
             current = current.next;
-            if(!current)
+            if(current == null)
                 return false;
         }
         return true;
