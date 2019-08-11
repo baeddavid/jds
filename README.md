@@ -51,6 +51,7 @@ If you have a data strucutre you'd like to see implemeted feel free to shoot me 
 ## Linked List
 
 The linked list is implemeted with a doubly linked list. 
+
 Below are the methods for the `LinkedList` class.
 
 You can create a linked list by calling
@@ -96,6 +97,7 @@ ADT stands for Abstract Data Type. ADTs are a data type where the user is not co
 ## Stack
 
 Stack is implemented via an array
+
 Below are the methods for the `Stack` class.
 
 You can create a stack by calling
@@ -119,6 +121,7 @@ assuming you gave the package import a name of `jds`.
 ## Queue
 
 Queue is implemented via an array
+
 Below are the methods for the `Queue` class.
 
 You can create a queue by calling
@@ -142,6 +145,7 @@ assuming you gave the package import a name of `jds`.
 ## Priority Queue
 
 Linked Queue is implemented via an array.
+
 Below are the methods for the `Priority Queue` class.
 
 You can create a priority queue by calling
@@ -169,6 +173,7 @@ assuming you gave the package import a name of `jds`.
 ## Linked Stack
 
 Linked Stack is implemented via a the `LinkedList` class.
+
 Below are the methods for the `LinkedStack` class.
 
 You can create a linked stack by calling
@@ -192,6 +197,7 @@ assuming you gave the package import a name of `jds`.
 ## Linked Queue
 
 Linked Queue is implemented via a the `LinkedList` class.
+
 Below are the methods for the `LinkedQueue` class.
 
 You can create a linked queue by calling
@@ -223,6 +229,7 @@ Hash data structures are structures that use a hash function. Due to the hash fu
 ## Hash Set
 
 Hash Set is implemented via the `Hash` abstract class.
+
 Below are the methods for the `HashSet` class.
 
 You can create a hash set by calling
@@ -248,6 +255,7 @@ assuming you gave the package import a name of `jds`.
 ## Hash Map
 
 Hash Map is implemented via the `Hash` abstract class and the `HashSet` class.
+
 Below are the methods for the `HashMap` class.
 
 You can create a hash map by calling
@@ -348,6 +356,7 @@ Graphs are a non-linear data structure consisting of nodes and edges.
 ## Graph
 
 Graph is implemented via an array and the `Vertex` class.
+
 Below are the methods for the `Graph ` class.
 
 You can create a graph by calling
