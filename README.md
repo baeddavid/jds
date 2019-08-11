@@ -10,7 +10,7 @@ JDS was made so that I could practice algorithms and data structures convenientl
 
 ## Contributing
 
-If you find a bug and went through the source code and know how to help absolutely submit a pull request! There aren't any specific guidelines for contributing, I just ask that you describe in detail what your pull request is fixing/improving.
+If you find a bug and went through the source code and know how to help, absolutely submit a pull request! There aren't any specific guidelines for contributing, I just ask that you describe in detail what your pull request is fixing/improving.
 
 ## Data Structures
 
