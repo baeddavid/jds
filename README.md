@@ -1,5 +1,5 @@
-# JDS (in-development)
-![Version](https://img.shields.io/badge/Version-0.1.6-Brightgreen)
+# JDS
+![Version](https://img.shields.io/badge/Version-0.1.7-Brightgreen)
 
 JDS(Java Data Structures) is an in development Javascript data structures library. It takes popular Java data structures and implements them in Javascript for convenient use. They come with standard Java methods.
 
