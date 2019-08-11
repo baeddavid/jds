@@ -24,7 +24,7 @@ class HashSet extends Hash {
     add(primitiveValue) {
         if(this.contains(primitiveValue))
             return false;
-        let index = this.hash(primitiveValue);
+        let index = this.hash(primitiveValue, this.length);
         this.hashArr[index] = primitiveValue;
         this.length++;
         return true;
@@ -32,7 +32,7 @@ class HashSet extends Hash {
 
     // Removes and returns the hashed primitive value
     remove(primitiveValue) {
-        let index = this.hash(primitiveValue);
+        let index = this.hash(primitiveValue, this.length);
         let returnValue = this.hashArr[index];
         this.hashArr[index] = 0;
         this.length--;
@@ -41,7 +41,7 @@ class HashSet extends Hash {
 
     // Checks if the set has a value and returns a boolean
     contains(primitiveValue) {
-        let index = this.hash(primitiveValue);
+        let index = this.hash(primitiveValue, this.length);
         if(!this.hashArr[index])
             return false;
         return true;
