@@ -1,15 +1,4 @@
-
-
-// Constructor/class for link object
-class Link {
-    constructor(object) {
-        this.object = object;
-        // next pointer default is null
-        this.next = null;
-        // prev pointer default is null
-        this.prev = null;
-    }
-}
+const Link = require('./Link')
 
 /**
  * Creates an empty doubly-linked list. A linked list is a data structure that does not
