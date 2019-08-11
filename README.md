@@ -2,23 +2,33 @@
 
 JDS(Java Data Structures) is an in development Javascript data structures library. It takes popular Java data structures and implements them in Javascript for convenient use. They come with standard Java methods.
 
-## Data Structures to be implemented
+## What is JDS for
+
+Although JDS can be used for personal project development, I highly reccomend waiting for future updates before doing so. I hastily made most of the data structures in 3 days so they may have varying bugs. 
+
+JDS was made so that I could practice algorithms and data structures conveniently on my personal machine without downloading multiple NPM packages or copying code from somewhere.
+
+## Contributing
+
+If you find a bug and went through the source code and know how to help absolutely submit a pull request! There aren't any specific guidelines for contributing, I just ask that you describe in detail what your pull request is fixing/improving.
+
+## Data Structures
 
 | Type  | Data Structure | Implemented|
 | ------------- | ------------- | ------------- |
-| ADT  | Stack  | ✓ |
-| ADT  | Queue  | ✓ |
-| ADT  | Priority Queue  | ✓ |
-| ADT  | Linked Stack  | ✓ |
-| ADT  | Linked Queue  | ✓ |
-| Tree | Max Heap  | ✓ |
-| Tree | Min Heap  | ✓ |
-| Tree | Binary Search Tree  | ✓ |
-| Hash  | Hash Map  | ✓ |
-| Hash  | Hash Set  | ✓ | 
-| Pointer  | Linked List  | ✓ |
-| Pointer  | Graph  | ✓ |
-| Pointer  | Weighted Graph  | In-progress (most likely last) |
+| ADT  | Stack  |
+| ADT  | Queue  |
+| ADT  | Priority Queue  |
+| ADT  | Linked Stack  |
+| ADT  | Linked Queue  |
+| Tree | Max Heap  |
+| Tree | Min Heap  |
+| Tree | Binary Search Tree  |
+| Hash  | Hash Map  |
+| Hash  | Hash Set  |
+| Pointer  | Linked List  |
+| Pointer  | Graph  |
+| Pointer  | Weighted Graph  
 
 
 ## Potential Strucutures to be implemented
@@ -28,11 +38,6 @@ JDS(Java Data Structures) is an in development Javascript data structures librar
  * Red-Black Tree
  * LinkedMap
  * HashTree
- 
-
-## Release Data
- * Currently a side project so it will be released in about 4-6  weeks at the current rate. Will be released when the main structures are implemented. This is not a hard release date, as testing and other things may bog me down.
-
 
 ## Documentation
 
@@ -241,6 +246,64 @@ Below are the methods for the `HashMap` class.
 | `toArray()`  | Returns an array of all the values in map |
 | `isEmpty()`  | Returns a boolean if the map is empty or not|
 | `size()`  | Returns the size of the map |
+
+# Trees
+
+Trees are generally pointer based data structures that hold references to 'children' nodes. JDS 1.0 comes with 3 trees: 2 array based and 1 pointer based.
+
+## Max Heap
+
+Max Heap is implemented via an array.
+
+## Methods
+
+| Method  | Description |
+| ------------- | ------------- |
+| **Add**  |  |
+| `insert(object)`  | Inserts an object into the heap, adjusting the heap to maintain heap properties
+| **Remove**  |  |
+| `extractMax()`  | Removes and returns the root of the heap and heapifies the heap to maintain heap properties |
+| **Etc**  |  |
+| `buildHeap()`  | Converts an array into heap organization. Does not create a new heap object |
+| `isEmpty()`  | Returns a boolean if the heap is empty or not |
+
+## Min Heap
+
+Min Heap is implemented via an array.
+
+## Methods
+
+| Method  | Description |
+| ------------- | ------------- |
+| **Add**  |  |
+| `insert(object)`  | Inserts an object into the heap, adjusting the heap to maintain heap properties
+| **Remove**  |  |
+| `extractMin()`  | Removes and returns the root of the heap and heapifies the heap to maintain heap properties |
+| **Etc**  |  |
+| `buildHeap()`  | Converts an array into heap organization. Does not create a new heap object |
+| `isEmpty()`  | Returns a boolean if the heap is empty or not |
+
+## Binary Search Tree (bst)
+
+Binary Search Tree is implemented via the `Node` class.
+
+**Note** bst is an unbalanced tree which degenerates performance wise in specific conditions 
+
+## Methods
+
+| Method  | Description |
+| ------------- | ------------- |
+| **Add**  |  |
+| `insert(object, id)`  | Inserts an object into the tree, and sorts it into the appropriate position via `id`.
+| **Remove**  |  |
+| `remove(id)`  | Removes and returns the the node with id of `id` |
+| **Etc**  |  |
+| `search(key)`  | Searches the tree for a node with id of `key`. If it doesn't exist, it returns null |
+| `preOrder(node)`  | Performs a pre-order traversal of the tree starting at `node`|
+| `inOrder(node)`  | Performs an in-order traversal of the tree starting at `node`|
+| `postOrder(node)`  | Performs a post-order traversal of the tree starting at `node`|
+| `minValue(node)`  | Returns the node with the minimum `id` for `node`'s subtree|
+| `maxValue(node)`  | Returns the node with the maximum `id` for `node`'s subtree|
 
 # Graphs
 
