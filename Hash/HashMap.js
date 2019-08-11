@@ -1,7 +1,7 @@
 const Hash = require('./Hash');
 // const HashSet = require('./HashSet');
 
-class HashMap extends Hash {
+class HashMap {
     constructor() {
         // super();
         this.mapArr = [];
