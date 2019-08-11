@@ -1,9 +1,9 @@
 const Hash = require('./Hash');
 // const HashSet = require('./HashSet');
 
-class HashMap {
+class HashMap extends Hash{
     constructor() {
-        // super();
+        super();
         this.mapArr = [];
         this.keyArr = [];
         this.size = 0;
@@ -11,7 +11,7 @@ class HashMap {
 
     put(key, value) {
         this.keyArr.push(key);
-        let idx = this.hash(key, this.size);
+        let idx = this.hash(key);
         this.mapArr[idx] = value;
         this.size++;
         return true;
@@ -75,5 +75,7 @@ class HashMap {
         return this.size == 0;
     }
 }
-
+let map = new HashMap();
+map.put(4,3);
+console.log(map);
 module.exports = HashMap;
