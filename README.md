@@ -296,8 +296,9 @@ Binary Search Tree is implemented via the `Node` class.
 | `insert(object, id)`  | Inserts an object into the tree, and sorts it into the appropriate position via `id`.
 | **Remove**  |  |
 | `remove(id)`  | Removes and returns the the node with id of `id` |
-| **Etc**  |  |
+| **Search**  |  |
 | `search(key)`  | Searches the tree for a node with id of `key`. If it doesn't exist, it returns null |
+| **Etc**  |  |
 | `preOrder(node)`  | Performs a pre-order traversal of the tree starting at `node`|
 | `inOrder(node)`  | Performs an in-order traversal of the tree starting at `node`|
 | `postOrder(node)`  | Performs a post-order traversal of the tree starting at `node`|
