@@ -11,7 +11,7 @@ class Hash {
 
     hash(key, length) {
         key = this.hash2(key, length);
-        return key *= 31 % 11;
+        return key *= 31 % 11 << 1;
     }
 
     hash2(key, length) {
