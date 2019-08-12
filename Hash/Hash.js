@@ -9,21 +9,22 @@ const isObj = Symbol('isObj');
 class Hash {
     constructor() { } 
 
-     hash(key) {
+    hash(key, length) {
+        key = this.hash2(key, length);
+        return key *= 31 % 11;
+    }
+
+    hash2(key, length) {
         if(this[isObj](key))
             key = JSON.stringify(key)
         else
             key = key.toString();
+        let charCode = 0;
         let hash = 0;
-        if (key.length == 0) {
-            return hash;
-        }
-        for (let i = 0; i < key.length; i++) {
-            let char = key.charCodeAt(i);
-            hash = ((hash<<5)-hash)+char;
-            hash = hash & hash; // Convert to 32bit integer
-        }
-        return Math.abs(hash);
+        for(let i = 0; i < key.length; i++)
+            charCode += key.charCodeAt(i);
+        hash = (charCode * 1031) % (length + 1200);
+        return hash;
     }
 
     [isObj](obj) {
