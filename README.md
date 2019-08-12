@@ -1,5 +1,5 @@
 # JDS
-![Version](https://img.shields.io/badge/Version-1.0.2-Brightgreen)
+![Version](https://img.shields.io/badge/Version-1.0.3-Brightgreen)
 
 JDS(Java Data Structures) is an in development Javascript data structures library. It takes popular Java data structures and implements them in Javascript for convenient use. They come with standard Java methods.
 
@@ -254,11 +254,9 @@ assuming you gave the package import a name of `jds`.
 
 # Hash
 
-Hash data structures are structures that use a hash function. Due to the hash function, amortized time analysis is O(1). 
+Hash data structures are structures that use a hash function. Due to the hash function, amortized time analysis for most methods is O(1). 
 
-**NOTE** Please only use primitive values as of version 0.1.1. I need to fix it, but am too lazy right now.
-
-**NOTE 2** I need to refactor the hash function as it both doesn't work with objects and creates hash's that may be too large when enough variables are put in. If you want to contribute check out contribution guidlines. 
+**NOTE** Hash now works with objects. It may have a few bugs, so please submit an issue if it isn't working correctly.
 
 ## Hash Set
 
