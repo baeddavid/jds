@@ -10,6 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/eyybaebae/jds.git"
   },
+  "keywords": [
+    "Data Structures",
+    "Tree",
+    "ADT",
+    "List",
+    "Java"
+  ],
   "author": "David Bae",
   "license": "MIT",
   "bugs": {
