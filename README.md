@@ -36,6 +36,7 @@ If you have a data strucutre you'd like to see implemeted feel free to shoot me 
 | Hash  | Hash Map  |
 | Hash  | Hash Set  |
 | Pointer  | Linked List  |
+| Pointer  | Singly Linked List  |
 | Pointer  | Graph  |
 
 ## Potential Strucutures to be implemented
@@ -48,6 +49,8 @@ If you have a data strucutre you'd like to see implemeted feel free to shoot me 
  * Weighted Graph
 
 # Documentation
+
+# Lists
 
 ## Linked List
 
@@ -90,6 +93,36 @@ assuming you gave the package import a name of `jds`.
 | `toArray()`  | Returns an array of the list in order |
 | `copy()`  | Creates a shallow copy of the list |
 | `deepCopy()`  | Creates a deep copy of the list |
+
+## Singly Linked List
+
+The linked list is implemeted with a singly linked list. 
+
+Below are the methods for the `sLinkedList` class.
+
+You can create a linked list by calling
+`new jds.sLinkedList()`
+assuming you gave the package import a name of `jds`.
+
+| Method  | Description |
+| ------------- | ------------- |
+| **Add**  |  |
+| `add(object)`  | Adds an object to the head of the list |
+| **Remove**  |  |
+| `removeFirst()`  | Removes an object at the head of the list |
+| `removeKey(key)`  | Removes an object with key in the list |
+| **Search**  |  |
+| `get(index)`  | Returns the link at index  |
+| `search(key)`  | Returns the link with key |
+| `contains(key)`  | Returns a boolean if list contains key |
+| **Etc**  |  |
+| `set(index, key)`  | Changes the key of a link at index |
+| `peekFirst()`  | Returns the head of the list |
+| `toArray()`  | Returns an array of the list in order |
+| `copy()`  | Creates a shallow copy of the list |
+| `deepCopy()`  | Creates a deep copy of the list |
+| `isEmpty()`  | Returns a boolean if the list is empty or not |
+| `size()`  | Returns the size of the list |
 
 # ADT
 
