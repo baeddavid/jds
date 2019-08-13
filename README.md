@@ -33,6 +33,7 @@ If you have a data strucutre you'd like to see implemeted feel free to shoot me 
 | Tree | Max Heap  |
 | Tree | Min Heap  |
 | Tree | Binary Search Tree  |
+| Tree | Red-Black Tree (In-Progress)  |
 | Hash  | Hash Map  |
 | Hash  | Hash Set  |
 | Pointer  | Linked List  |
@@ -43,7 +44,6 @@ If you have a data strucutre you'd like to see implemeted feel free to shoot me 
  * TreeSet
  * 2-3-4 Tree
  * B-Trees
- * Red-Black Tree
  * LinkedMap
  * HashTree
  * Weighted Graph
