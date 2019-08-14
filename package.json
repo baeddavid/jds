@@ -1,6 +1,6 @@
 {
   "name": "jds.js",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "JDS(Java Data Structures) is an in development Javascript data structures library. It takes popular Java data structures and implements them in Javascript for convenient use. They come with standard Java methods.",
   "main": "index.js",
   "scripts": {
