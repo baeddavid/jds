@@ -5,9 +5,9 @@ JDS(Java Data Structures) is an in development Javascript data structures librar
 
 ## What is JDS for
 
-Although JDS can be used for personal project development, I highly reccomend waiting for future updates before doing so. I hastily made most of the data structures in 3 days so they may have varying bugs.
+Although JDS can be used for personal project development, I highly reccomend waiting for future updates before doing so. I hastily made most of the data structures in a week so they may have varying bugs.
 
-JDS was made so that I could practice algorithms and data structures conveniently on my personal machine without downloading multiple NPM packages or copying code from somewhere.
+JDS was made so that I could practice algorithms and data structures conveniently on my personal machine without downloading multiple NPM packages or copying code from somewhere. I will be maintaining the code and slowly adding to them to make them production ready for applications.
 
 ## Installation
 
