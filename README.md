@@ -23,7 +23,7 @@ You can now freely create jds data structures! If you want to create a doubly li
 
 `let LinkedList = new jds.LinkedList()`
 
-If you're every stuck or confused check the docs!
+If you're ever stuck or confused check the docs!
 
 ## Contributing
 
