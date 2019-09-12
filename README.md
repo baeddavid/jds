@@ -5,15 +5,25 @@ JDS(Java Data Structures) is an in development Javascript data structures librar
 
 ## What is JDS for
 
-Although JDS can be used for personal project development, I highly reccomend waiting for future updates before doing so. I hastily made most of the data structures in 3 days so they may have varying bugs. 
+Although JDS can be used for personal project development, I highly reccomend waiting for future updates before doing so. I hastily made most of the data structures in 3 days so they may have varying bugs.
 
 JDS was made so that I could practice algorithms and data structures conveniently on my personal machine without downloading multiple NPM packages or copying code from somewhere.
 
 ## Installation
 
-Just throw this into the working repository in your terminal and you're all set
+Just throw this into the root directory of your repository in your terminal and you're all set.
 
 `npm install jds.js`
+
+After installing jds, require it with
+
+`const jds = require('jds.js);`
+
+You can now freely create jds data structures! If you want to create a doubly linked list for example you can do this by calling:
+
+`let LinkedList = new jds.LinkedList()`
+
+If you're every stuck or confused check the docs!
 
 ## Contributing
 

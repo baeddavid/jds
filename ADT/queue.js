@@ -36,5 +36,13 @@ class Queue {
         return this.length;
     }
 }
+let iterations = 1000000;
+
+let q = new Queue();
+console.time('Function JS');
+for(let i = 0; i < iterations; i++ ){
+    q.enque(i);
+};
+console.timeEnd('Function JS')
 
 module.exports  = Queue;
