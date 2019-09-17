@@ -17,7 +17,7 @@ Just throw this into the root directory of your repository in your terminal and 
 
 After installing jds, require it with
 
-`const jds = require('jds.js);`
+`const jds = require('jds.js');`
 
 You can now freely create jds data structures! If you want to create a doubly linked list for example you can do this by calling:
 
