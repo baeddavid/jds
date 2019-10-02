@@ -1,6 +1,8 @@
 # JDS
 ![Version](https://img.shields.io/badge/Version-1.0.5-Brightgreen)
 
+test
+
 JDS(Java Data Structures) is an in development Javascript data structures library. It takes popular Java data structures and implements them in Javascript for convenient use. They come with standard Java methods.
 
 ## What is JDS for
@@ -35,7 +37,7 @@ If you have a data strucutre you'd like to see implemeted feel free to shoot me 
 ## Data Structures
 
 | Type  | Data Structure |
-| ------------- | ------------- | 
+| ------------- | ------------- |
 | ADT  | Stack  |
 | ADT  | Queue  |
 | ADT  | Priority Queue  |
@@ -65,7 +67,7 @@ If you have a data strucutre you'd like to see implemeted feel free to shoot me 
 
 ## Linked List
 
-The linked list is implemeted with a doubly linked list. 
+The linked list is implemeted with a doubly linked list.
 
 Below are the methods for the `LinkedList` class.
 
@@ -107,7 +109,7 @@ assuming you gave the package import a name of `jds`.
 
 ## Singly Linked List
 
-The linked list is implemeted with a singly linked list. 
+The linked list is implemeted with a singly linked list.
 
 Below are the methods for the `sLinkedList` class.
 
@@ -137,7 +139,7 @@ assuming you gave the package import a name of `jds`.
 
 # ADT
 
-ADT stands for Abstract Data Type. ADTs are a data type where the user is not concerned with how it was implemented as long as it works. 
+ADT stands for Abstract Data Type. ADTs are a data type where the user is not concerned with how it was implemented as long as it works.
 
 ## Stack
 
@@ -265,7 +267,7 @@ assuming you gave the package import a name of `jds`.
 
 # Hash
 
-Hash data structures are structures that use a hash function. Due to the hash function, amortized time analysis for most methods is O(1). 
+Hash data structures are structures that use a hash function. Due to the hash function, amortized time analysis for most methods is O(1).
 
 **NOTE** Hash now works with objects. It may have a few bugs, so please submit an issue if it isn't working correctly.
 
@@ -368,7 +370,7 @@ assuming you gave the package import a name of `jds`.
 
 Binary Search Tree is implemented via the `Node` class.
 
-**Note** bst is an unbalanced tree which degenerates performance wise in specific conditions 
+**Note** bst is an unbalanced tree which degenerates performance wise in specific conditions
 
 You can create a bst by calling
 `new jds.bst()`
